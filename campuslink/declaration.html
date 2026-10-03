@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusLink - Déclarer un incident</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CampusLink</h1>
+
+        <nav>
+            <a href="index.html">Tableau de bord</a>
+            <a href="salles.html">Salles</a>
+            <a href="equipements.html">Équipements</a>
+            <a href="incidents.html">Incidents</a>
+            <a href="declarer-incident.html">Déclarer un incident</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Déclarer un incident</h2>
+
+            <p>
+                Utilisez ce formulaire pour signaler un problème
+                concernant une salle ou un équipement.
+            </p>
+        </section>
+
+        <section>
+
+            <form>
+
+                <p>
+                    <label for="titre">Titre de l'incident</label><br>
+                    <input type="text" id="titre" name="titre" required>
+                </p>
+
+                <p>
+                    <label for="salle">Salle concernée</label><br>
+                    <select id="salle" name="salle" required>
+                        <option value="">Choisir une salle</option>
+                        <option value="A101">Salle A101</option>
+                        <option value="B202">Salle B202</option>
+                        <option value="C303">Salle C303</option>
+                        <option value="D104">Salle D104</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="equipement">Équipement concerné</label><br>
+                    <select id="equipement" name="equipement">
+                        <option value="">Choisir un équipement</option>
+                        <option value="ordinateur">Ordinateur</option>
+                        <option value="projecteur">Projecteur</option>
+                        <option value="ecran">Écran</option>
+                        <option value="imprimante">Imprimante</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="description">Description du problème</label><br>
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="6"
+                        required
+                    ></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Déclarer l'incident</button>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>CampusLink - 2026</p>
+    </footer>
+
+</body>
+</html>
